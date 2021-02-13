@@ -3,7 +3,7 @@ public class Aplicacao {
     public static void main(String[] args) {
         Diretor diretor = new Diretor("Michael", 33,
                 100, Genero.MASCULINO);
-        Ator ator = new Ator("Goku", 100, Genero.MASCULINO);
+        Ator ator = new Ator("Goku", 100, Genero.MASCULINO,1);
 
         Filme filme1 = new Filme("Lagoa Azul",
                 "Mais visto na sessão da tarde",
@@ -13,7 +13,7 @@ public class Aplicacao {
 
         filme1.reproduzir();
         filme2.reproduzir();
-        diretor.descricao();
-        ator.descricao();
+        diretor.imprimir();
+        ator.imprimir();
     }
 }

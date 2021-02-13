@@ -2,7 +2,7 @@ package Exercicios;
 
 public class Aluno {
     private String nome;
-    private float notaFinal;
+    private double notaFinal;
     public boolean status;
 
     public Aluno(String aluno, float notaFinal) {
@@ -26,7 +26,7 @@ public class Aluno {
         this.nome = aluno;
     }
 
-    public float getNotaFinal() {
+    public double getNotaFinal() {
         return notaFinal;
     }
 

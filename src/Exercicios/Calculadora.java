@@ -13,7 +13,7 @@ public class Calculadora {
 
         return valor1 * valor2;
     }
-    public float divide(float numerador, float denominador){
+    public double divide(double numerador, double denominador){
 
 
         return  numerador / denominador;

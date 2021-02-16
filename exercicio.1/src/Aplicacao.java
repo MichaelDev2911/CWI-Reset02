@@ -12,7 +12,7 @@ public class Aplicacao {
                 30, 1987, 5, diretor);
         Filme filme3 = new Filme("Batman vs SuperMan","Show de horror",
                 1000,2010,5,diretor);
-        
+
         filme1.reproduzir();
         filme2.reproduzir();
         filme3.reproduzir();

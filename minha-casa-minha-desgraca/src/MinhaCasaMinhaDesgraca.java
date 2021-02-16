@@ -12,31 +12,31 @@ public class MinhaCasaMinhaDesgraca {
 
         ImoveisParaFinanciamento opcoesParaFinanciamento = new ImoveisParaFinanciamento();
         Endereco endereco1 = new Endereco("Rua parobe","Casa10", "Solidão","Lindas Rosas",555,UnidadeFederativa.SP);
-        Imovel  imovel1 = new Imovel(endereco1,70000);
+        Imovel  imovel1 = new Casa("Sim",endereco1,70000);
         Endereco endereco2 = new Endereco("Rua Das Rosas","Vermelha",
                 "Jardin","Novo Mundo", 50,UnidadeFederativa.RJ);
-        Imovel imovel2 = new Imovel(endereco2,600000);
+        Imovel imovel2 = new Casa("Não",endereco2,600000);
         Endereco endereco3 = new Endereco("Rua CWI-Reset","Meu objetico",
                 "Convicção","Realização",1,UnidadeFederativa.RS);
-        Imovel imovel3 = new Imovel(endereco3,999999);
+       Imovel imovel3 = new Casa("Não",endereco3,999999);
         Endereco endereco4 = new Endereco("Rua Jesus","Salva",
                 "compaixão","Jerusalém",7,UnidadeFederativa.DF);
-        Imovel imovel4 = new Imovel(endereco4,50000);
+        Imovel imovel4 = new Casa("Sim,bem grandão",endereco4,50000);
         Endereco endereco5 = new Endereco("Rua Angra dos Reis", "casa 3", "" +
                 "Parque Ipiranga", "Gravataí",342,UnidadeFederativa.RS);
-        Imovel imovel5 = new Imovel(endereco5, 180000);
+        Imovel imovel5 = new Apartamento(" 3°",endereco5, 180000);
         Endereco endereco6 = new Endereco("Rua da Praia", "mole",
                 "ilha", "floripa", 111, UnidadeFederativa.SC);
-        Imovel imovel6 = new Imovel(endereco6,500000);
+        Imovel imovel6 = new Apartamento(" 1°",endereco6,500000);
         Endereco endereco7 = new Endereco("Rua dos Ingleses", "Santinho",
                 "Ingleses", "Florianópolis",100,UnidadeFederativa.SC);
-        Imovel imovel7 = new Imovel(endereco7,150000);
+        Imovel imovel7 = new Apartamento(" 10°",endereco7,150000);
         Endereco endereco8 = new Endereco("Rua da Ferrugem","australinha",
                 "Ferrugem","Garopada",900, UnidadeFederativa.SP);
-        Imovel imovel8 = new Imovel(endereco8,650000);
+        Imovel imovel8 = new Apartamento("33°",endereco8,650000);
         Endereco endereco9 = new Endereco("Ruas das Cavernas", "morcegos",
                 "Perdido","Matinhos",24,UnidadeFederativa.MS);
-        Imovel imovel9 = new Imovel(endereco9,600000);
+        Imovel imovel9 = new Apartamento("7°",endereco9,600000);
         opcoesParaFinanciamento.registrarImovel(imovel1);
         opcoesParaFinanciamento.registrarImovel(imovel2);
         opcoesParaFinanciamento.registrarImovel(imovel3);

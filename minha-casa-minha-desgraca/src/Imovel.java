@@ -1,5 +1,5 @@
 
-public class Imovel {
+public abstract class Imovel {
     private Endereco endereco;
     private double valor;
 
@@ -7,6 +7,8 @@ public class Imovel {
         this.endereco = endereco;
         this.valor = valor;
     }
+
+
 
     public Endereco getEndereco() {
         return endereco;
@@ -20,6 +22,9 @@ public class Imovel {
                 "\nBairro: "+ this.endereco.getBairro()+ " - Cidade: "+ this.endereco.getCidade()+
                 "\nEstado: "+ this.endereco.getEstado()+
                 " - Valor R$: "+ Double.toString(valor);
+
+
         return retorno;
     }
+
 }

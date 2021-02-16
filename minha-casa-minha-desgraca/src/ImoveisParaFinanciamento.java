@@ -38,8 +38,14 @@ public class ImoveisParaFinanciamento {
 
         // percorre a lista de imóveis
         for (Imovel imovel : imoveis) {
+            if(imovel.getValor() >= 50000 && imovel.getValor()<=1000000){
 
                 opcoes.add(imovel);
+            }else{
+                System.out.println("Tá doidão! Digita um valor justo ai.");
+            }
+
+
 
 
             // se "imovel" corresponder às regras, adicioná-lo à lista de opcoes com o seguinte código:

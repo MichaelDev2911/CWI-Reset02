@@ -18,8 +18,10 @@ public abstract class Imovel {
         return valor;
     }
     public String apresentacao(){
-        String retorno="Imóvel localizado no lagradouro "+ this.endereco.getLogradouro()+
-                "\nBairro: "+ this.endereco.getBairro()+ " - Cidade: "+ this.endereco.getCidade()+
+        String retorno="Imóvel localizado no lagradouro "+
+                this.endereco.getLogradouro()+
+                "\nBairro: "+ this.endereco.getBairro()+
+                " - Cidade: "+ this.endereco.getCidade()+
                 "\nEstado: "+ this.endereco.getEstado()+
                 " - Valor R$: "+ Double.toString(valor);
 

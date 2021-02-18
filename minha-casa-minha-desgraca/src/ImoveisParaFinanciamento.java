@@ -36,17 +36,17 @@ public class ImoveisParaFinanciamento {
 
         List<Imovel> opcoes = new ArrayList<>();
 
-        // percorre a lista de imóveis
+        /* percorre a lista de imóveis e verifica
+         * se com o valor informado existe opções.
+         */
         for (Imovel imovel : imoveis) {
-            if(imovel.getValor() >= 50000 && imovel.getValor()<=1000000){
+            if(valorLimite >= imovel.getValor()){
+
 
                 opcoes.add(imovel);
             }else{
                 System.out.println("Tá doidão! Digita um valor justo ai.");
             }
-
-
-
 
             // se "imovel" corresponder às regras, adicioná-lo à lista de opcoes com o seguinte código:
             //    opcoes.add(imovel);

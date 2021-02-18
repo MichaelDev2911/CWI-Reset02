@@ -11,8 +11,13 @@ public class MinhaCasaMinhaDesgraca {
         System.out.println("\n ### Olá, seja bem vindo ao magnífico programa Minha Casa - Minha Desgraça ###\n");
 
         ImoveisParaFinanciamento opcoesParaFinanciamento = new ImoveisParaFinanciamento();
+
+        /* instanciando objeto do tipo Casa e Apartamento da familia Imovel,
+         * juntamento com imoveis foi instanciado a mesma quantidade de endereço.
+         */
+
         Endereco endereco1 = new Endereco("Rua parobe","Casa10", "Solidão","Lindas Rosas",555,UnidadeFederativa.SP);
-        Imovel  imovel1 = new Casa("Sim",endereco1,70000);
+        Imovel  imovel1 = new Casa("Sim",endereco1,60000);
         Endereco endereco2 = new Endereco("Rua Das Rosas","Vermelha",
                 "Jardin","Novo Mundo", 50,UnidadeFederativa.RJ);
         Imovel imovel2 = new Casa("Não",endereco2,600000);
@@ -37,6 +42,7 @@ public class MinhaCasaMinhaDesgraca {
         Endereco endereco9 = new Endereco("Ruas das Cavernas", "morcegos",
                 "Perdido","Matinhos",24,UnidadeFederativa.MS);
         Imovel imovel9 = new Apartamento("7°",endereco9,600000);
+        // Adicionando opções de casa e apartamento que respeitam as condições.
         opcoesParaFinanciamento.registrarImovel(imovel1);
         opcoesParaFinanciamento.registrarImovel(imovel2);
         opcoesParaFinanciamento.registrarImovel(imovel3);
@@ -46,14 +52,7 @@ public class MinhaCasaMinhaDesgraca {
         opcoesParaFinanciamento.registrarImovel(imovel7);
         opcoesParaFinanciamento.registrarImovel(imovel8);
         opcoesParaFinanciamento.registrarImovel(imovel9);
-
-
-
-
-
-
-
-
+        // interatividade feita por Dev CWI sem nenhuma alteração feita por mim.
         List<Imovel> todasAsOpcoes = opcoesParaFinanciamento.buscarOpcoes(Double.MAX_VALUE);
         if (todasAsOpcoes == null || todasAsOpcoes.isEmpty()) {
             throw new RuntimeException("\n\nAtenção! Você precisa registrar opções de financiamento antes de começar a usar o programa.\n"

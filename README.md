@@ -1,6 +1,8 @@
 # CWI-Reset02
-##  live #2 java- Orientação objetos java
----Agregação,Herança, Polimorfismo,Boas praticas.
+##  live #3 java- Orientação objetos java
+
+--- Polimorfismo,Boas praticas, coleções, forEach,Date,Atributos estáticos,
+ exceções,Cliente/Server,Http,REST,metodos get,push,delete e outros e a desgraça da semana,kkkk,Opa! *Banco da desgraça*.
 
 - [x] *Intellig idea*
 - [x] *JavaPoo*

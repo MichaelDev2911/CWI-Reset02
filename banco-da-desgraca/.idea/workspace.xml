@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da931660-d390-447e-8bf0-5887f775ead8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/banco-da-desgraca.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Transacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Transacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/conta/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/conta/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/conta/ContaDigital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/conta/ContaDigital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/conta/ContaPoupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/conta/ContaPoupanca.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -21,14 +21,6 @@ public  class Transacao  {
         return tipoTransacao;
     }
 
-    public void setTipoTransacao(TipoTransacao tipoTransacao) {
-        this.tipoTransacao = tipoTransacao;
-    }
-
-    public LocalDate getDatatransacao() {
-        return datatransacao;
-    }
-
     public Double getValor() {
         return valor;
     }

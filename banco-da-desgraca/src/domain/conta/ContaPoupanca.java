@@ -1,16 +1,14 @@
 package domain.conta;
 
-import br.com.reset.banco.da.desgraca.Data;
-import domain.Transacao;
+
+
 import enumerators.InstituicaoBancaria;
-import enumerators.TipoTransacao;
 import exception.SaldoInsuficienteException;
 import exception.ValorMinimoException;
 import interfaces.ContaBancaria;
-
 import java.text.DecimalFormat;
 import java.time.LocalDate;
-import java.util.List;
+
 
 public class ContaPoupanca extends Conta {
 

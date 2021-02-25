@@ -16,7 +16,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-
+// implementação da interface conta bancaria.
 public abstract class Conta implements ContaBancaria {
     private String donoConta;
     private double saldo;
@@ -82,6 +82,10 @@ public abstract class Conta implements ContaBancaria {
 
     @Override
     public void depositar(Double valor) {
+        /* no primeiro momento esqueci o new e me gerou um nuulPoiterException que
+         * que fez da um looping na cabeça, mais com ajuda dos colegas e do you tube
+         * saiu o nee no lugar correto acredito eu.
+         */
         transacaos.add (new Transacao(TipoTransacao.DEPOSITO,Data.getDataTransacao(),valor));
 
 
@@ -118,13 +122,13 @@ public abstract class Conta implements ContaBancaria {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
         for(Transacao transacao: transacaos){
+            // Para cada transação faça =>
 
 
             System.out.println(transacao.getTipoTransacao().getSimbolo()+
-                    " R$ "+ transacao.getValor() + " "+ formatter.format(Data.getDataTransacao()));
-
-
-
+                    " R$ "+
+                    DecimalFormat.getCurrencyInstance().format(transacao.getValor()) +
+                    " "+ formatter.format(Data.getDataTransacao()));
 
 
         }

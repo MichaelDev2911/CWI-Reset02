@@ -4,12 +4,10 @@ package domain.conta;
 import br.com.reset.banco.da.desgraca.Data;
 import domain.Transacao;
 import enumerators.InstituicaoBancaria;
-
 import enumerators.TipoTransacao;
 import exception.SaldoInsuficienteException;
 import exception.ValorMinimoException;
 import interfaces.ContaBancaria;
-
 
 import java.text.DecimalFormat;
 import java.time.LocalDate;
@@ -123,12 +121,14 @@ public abstract class Conta implements ContaBancaria {
 
         for(Transacao transacao: transacaos){
             // Para cada transação faça =>
-
-
-            System.out.println(transacao.getTipoTransacao().getSimbolo()+
-                    " R$ "+
-                    DecimalFormat.getCurrencyInstance().format(transacao.getValor()) +
-                    " "+ formatter.format(Data.getDataTransacao()));
+            boolean filtroInicial = (inicio == null || Data.getDataTransacao().isAfter(inicio));
+            boolean filtroFinal = (fim == null || Data.getDataTransacao().isBefore(fim));
+            if(filtroInicial && filtroFinal) {
+                System.out.println(transacao.getTipoTransacao().getSimbolo() +
+                        " R$ " +
+                        DecimalFormat.getCurrencyInstance().format(transacao.getValor()) +
+                        " " + formatter.format(Data.getDataTransacao()));
+            }
 
 
         }

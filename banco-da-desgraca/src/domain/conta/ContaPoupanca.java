@@ -1,11 +1,11 @@
 package domain.conta;
 
 
-
 import enumerators.InstituicaoBancaria;
 import exception.SaldoInsuficienteException;
 import exception.ValorMinimoException;
 import interfaces.ContaBancaria;
+
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 
@@ -63,6 +63,7 @@ public class ContaPoupanca extends Conta {
                     this.getInstituicaoBancaria().getDescricao()+ "Número: " +
                     this.getNumeroContaCorrente());
             this.setSaldo(this.getSaldo()-(valor-taxaSaque));
+
         }else{
             throw new ValorMinimoException("Somente saques acima de R$ 50.00 ou \n" +
                     " saldo insuficiente");
@@ -87,12 +88,14 @@ public class ContaPoupanca extends Conta {
                     this.getNumeroContaCorrente());
 
             this.setSaldo(this.getSaldo()-(valor-taxaMesmaInstituicao));
+            contaDestino.depositar(valor);
 
         }else if (this.getSaldo() >=valor &&
         this.getInstituicaoBancaria()!=this.getInstituicaoBancaria()){
 
 
             this.setSaldo(this.getSaldo()-(valor-taxaDiferenteInstituicao));
+            contaDestino.depositar(valor);
         }else{
             throw  new SaldoInsuficienteException("Sem saldo para transferir");
         }

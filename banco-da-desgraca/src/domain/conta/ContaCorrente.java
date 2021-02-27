@@ -1,10 +1,7 @@
 package domain.conta;
 
 
-import br.com.reset.banco.da.desgraca.Data;
-import domain.Transacao;
 import enumerators.InstituicaoBancaria;
-import enumerators.TipoTransacao;
 import exception.SaldoInsuficienteException;
 import exception.ValorMinimoException;
 import interfaces.ContaBancaria;
@@ -19,10 +16,7 @@ public class ContaCorrente extends Conta {
         super(donoConta, instituicaoBancaria, numeroContaCorrente);
     }
 
-    @Override
-    public InstituicaoBancaria getInstituicaoBancaria() {
-        return this.getInstituicaoBancaria();
-    }
+
 
     @Override
     public Double consultarSaldo() {
@@ -80,6 +74,7 @@ public class ContaCorrente extends Conta {
                     this.getNumeroContaCorrente());
 
            this.setSaldo(this.getSaldo()-valor);
+            contaDestino.depositar(valor);
 
 
         }else if(this.getSaldo() >= valor &&
@@ -92,6 +87,7 @@ public class ContaCorrente extends Conta {
                     this.getNumeroContaCorrente());
 
             this.setSaldo(this.getSaldo()-(valor-taxa));
+            contaDestino.depositar(valor);
 
 
         }else{

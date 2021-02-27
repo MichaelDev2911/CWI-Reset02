@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da931660-d390-447e-8bf0-5887f775ead8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/domain/Transacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Transacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/br/com/reset/banco/da/desgraca/BancoDaDesgraca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/br/com/reset/banco/da/desgraca/BancoDaDesgraca.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/Transacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/Transacao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/Conta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/Conta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaCorrente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaCorrente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaDigital.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaDigital.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaPoupanca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaPoupanca.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/enumerators/TipoTransacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/enumerators/TipoTransacao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/reset/banco/da/desgraca/BancoDaDesgraca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/reset/banco/da/desgraca/BancoDaDesgraca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/conta/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/conta/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/conta/ContaDigital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/conta/ContaDigital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/conta/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/conta/ContaCorrente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/conta/ContaDigital.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/conta/ContaPoupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/conta/ContaPoupanca.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +60,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.reset.banco.da.desgraca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BancoDaDesgraca" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.banco.desgraca.BancoDaDesgraca" />
+      <module name="banco-da-desgraca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.banco.desgraca.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

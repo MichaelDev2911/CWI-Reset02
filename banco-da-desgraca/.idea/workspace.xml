@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da931660-d390-447e-8bf0-5887f775ead8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Spring/exemplo-reset/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/exemplo-reset/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/exemplo-reset/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/exemplo-reset/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/exemplo-reset/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/exemplo-reset/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/exemplo-reset/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/exemplo-reset/src/main/java/br/com/cwi/reset/exemploreset/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/exemplo-reset/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/exemplo-reset/src/test/java/br/com/cwi/reset/exemploreset/ApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/br/com/reset/banco/da/desgraca/BancoDaDesgraca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/br/com/reset/banco/da/desgraca/BancoDaDesgraca.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/Transacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/Transacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/Conta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/Conta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaCorrente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaCorrente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaDigital.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaDigital.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaPoupanca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/domain/conta/ContaPoupanca.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/banco-da-desgraca/enumerators/TipoTransacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco-da-desgraca/enumerators/TipoTransacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/reset/banco/da/desgraca/BancoDaDesgraca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/reset/banco/da/desgraca/BancoDaDesgraca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/conta/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/conta/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/conta/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/conta/ContaCorrente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/conta/ContaDigital.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/conta/ContaPoupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/conta/ContaPoupanca.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

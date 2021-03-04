@@ -3,6 +3,7 @@ package br.com.cwi.resetflix.response;
 import java.util.List;
 
 import br.com.cwi.resetflix.domain.Genero;
+import br.com.cwi.resetflix.entity.AtorEntity;
 
 public class ConsultarDetalhesSerieResponse {
     private Long id;
@@ -12,14 +13,13 @@ public class ConsultarDetalhesSerieResponse {
     private Integer quantidadeTemporadas;
     private Integer quantidadeEpisodios;
     List<SerieResponse> serie;
-    List<AtoresResponse> atores;
+    List<AtorEntity> atores;
 
-    public ConsultarDetalhesSerieResponse(List<SerieResponse> series, Long id, String nome, List<AtoresResponse> atorSalvo) {
-        this.serie = series;
-        this.id = id;
-        this.nome = nome;
-        this.atores = atorSalvo;
 
+
+    public ConsultarDetalhesSerieResponse(List<SerieResponse> series, List<AtorEntity> atores) {
+        this.serie=series;
+        this.atores=atores;
     }
 
 

@@ -1,6 +1,7 @@
 package br.com.cwi.resetflix.repository;
 
 
+
 import br.com.cwi.resetflix.entity.SerieEntity;
 import org.springframework.stereotype.Repository;
 
@@ -27,4 +28,18 @@ public class SerieRepository {
         return serieSalvar.getId();
 
     }
-}
+
+
+    public List<SerieEntity> acharSeriesId(Long id) {
+
+        for (
+                SerieEntity serieEntity : series) {
+            if (serieEntity.getId().equals(id)) {
+                return series;
+            }
+        }
+        return null;
+    }
+
+    }
+

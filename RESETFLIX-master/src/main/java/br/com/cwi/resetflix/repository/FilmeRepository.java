@@ -8,6 +8,7 @@ import java.util.List;
 
 import br.com.cwi.resetflix.entity.AtorEntity;
 import br.com.cwi.resetflix.entity.DiretorEntity;
+import br.com.cwi.resetflix.response.FilmeResponse;
 import org.springframework.stereotype.Repository;
 
 import br.com.cwi.resetflix.domain.Genero;
@@ -68,6 +69,22 @@ public class FilmeRepository {
                 return filmes;
             }
         }
+        return null;
+    }
+
+    public void assistirFilme(Long id) {
+// para cada filme visto add em usuario.  a lista o filme visto para ficar salvo
+        //viu
+
+    }
+
+    public List<FilmeResponse> recomendacoes() {
+        /* se  id lista de filmes vistos !=  id lista filme response
+        *  listar para o usuario
+        *
+        * se == lançar exceção.
+        * */
+
         return null;
     }
 }

@@ -30,6 +30,8 @@ public interface SeriesContract {
     @ApiOperation(value = "Obtém recomendações de séries.", notes = "Retorna séries recomendadas para o usuário atual.")
     public List<SerieResponse> getSeries();
 
+    List<SerieResponse> getSeries(Long id);
+
     @ApiOperation(value = "Assistir episódio de uma série.", notes = "Assiste o episódio de uma determinada série.")
     public void assistirSerie(@ApiParam("id") final Long id,
         @ApiParam("temporada") final Integer temporada,

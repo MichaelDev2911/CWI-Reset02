@@ -50,6 +50,8 @@ public class FilmesService {
     }
 
     public void assistirFilme(Long id) {
+        //aqui tem que fazer a vallidação no repósitorio.
+         filmeRepository.assistirFilme(id);
 
     }
 
@@ -59,6 +61,8 @@ public class FilmesService {
     }
 
     public List<FilmeResponse> recomendacoes() {
+
+        filmeRepository.recomendacoes();
         return null;
     }
 }

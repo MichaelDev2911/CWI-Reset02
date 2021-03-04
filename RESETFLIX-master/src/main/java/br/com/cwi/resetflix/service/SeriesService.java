@@ -2,12 +2,15 @@ package br.com.cwi.resetflix.service;
 
 
 
+import br.com.cwi.resetflix.domain.Genero;
+import br.com.cwi.resetflix.entity.AtorEntity;
+import br.com.cwi.resetflix.entity.DiretorEntity;
+import br.com.cwi.resetflix.entity.FilmeEntity;
 import br.com.cwi.resetflix.entity.SerieEntity;
 
-import br.com.cwi.resetflix.mapper.ConsultarDetalhesFilmeResponseMapper;
-import br.com.cwi.resetflix.mapper.ConsultarDetalhesSerieResponseMapper;
-import br.com.cwi.resetflix.mapper.SerieEntityMapper;
+import br.com.cwi.resetflix.mapper.*;
 
+import br.com.cwi.resetflix.repository.AtoresRepository;
 import br.com.cwi.resetflix.repository.SerieRepository;
 import br.com.cwi.resetflix.request.CriarSerieRequest;
 import br.com.cwi.resetflix.response.ConsultarDetalhesSerieResponse;
@@ -21,7 +24,10 @@ import java.util.List;
 public class SeriesService {
     @Autowired
     private SerieRepository serieRepository;
+    @Autowired
+    private AtoresRepository atoresRepository;
 
+    static SerieResponseMapper MAPPER_RESPONSE_SERIE = new SerieResponseMapper();
     static ConsultarDetalhesSerieResponseMapper MAPPER_DETALHES_SERIES = new ConsultarDetalhesSerieResponseMapper();
     static SerieEntityMapper MAPPER_ENTITY_SERIE = new SerieEntityMapper();
 
@@ -29,10 +35,11 @@ public class SeriesService {
         return null;
     }
 
-    public ConsultarDetalhesSerieResponse detalhesSerie() {
+    public ConsultarDetalhesSerieResponse detalhesSerie(Long id) {
 
-
-        return null;
+        final List<AtorEntity> atores = atoresRepository.getAtores();
+        List<SerieEntity> serie = serieRepository.acharSeriesId(id);
+        return MAPPER_DETALHES_SERIES.mapear(atores,serie);
     }
 
     public Long criarSerie(CriarSerieRequest request) {
@@ -43,8 +50,10 @@ public class SeriesService {
 
     }
 
-    public List<SerieResponse> acharSeriesId() {
-        return null;
+    public List<SerieResponse> acharSeriesId(Long id) {
+
+        List<SerieEntity> serie = serieRepository.acharSeriesId(id);
+        return MAPPER_RESPONSE_SERIE.mapear(serie);
     }
 
     public void AssistirSerie() {

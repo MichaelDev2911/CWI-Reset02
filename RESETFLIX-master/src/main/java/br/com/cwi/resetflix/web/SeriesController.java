@@ -4,7 +4,7 @@ import br.com.cwi.resetflix.domain.Genero;
 import br.com.cwi.resetflix.request.CriarSerieRequest;
 import br.com.cwi.resetflix.response.ConsultarDetalhesSerieResponse;
 import br.com.cwi.resetflix.response.SerieResponse;
-import br.com.cwi.resetflix.service.FilmesService;
+
 import br.com.cwi.resetflix.service.SeriesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,7 +26,7 @@ public class SeriesController implements SeriesContract{
 
     @Override
     public ConsultarDetalhesSerieResponse getSerieById(Long id) {
-        return seriesService.detalhesSerie();
+        return seriesService.detalhesSerie(id);
     }
 
     @Override
@@ -36,7 +36,13 @@ public class SeriesController implements SeriesContract{
 
     @Override
     public List<SerieResponse> getSeries() {
-        return seriesService.acharSeriesId();
+        return null;
+    }
+
+
+    @Override
+    public List<SerieResponse> getSeries(Long id) {
+        return seriesService.acharSeriesId(id);
     }
 
     @Override

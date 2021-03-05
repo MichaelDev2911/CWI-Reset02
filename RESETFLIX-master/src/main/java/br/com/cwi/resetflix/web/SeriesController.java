@@ -5,6 +5,7 @@ import br.com.cwi.resetflix.request.CriarSerieRequest;
 import br.com.cwi.resetflix.response.ConsultarDetalhesSerieResponse;
 import br.com.cwi.resetflix.response.SerieResponse;
 
+import br.com.cwi.resetflix.service.GeneroService;
 import br.com.cwi.resetflix.service.SeriesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,17 +19,19 @@ import java.util.List;
 public class SeriesController implements SeriesContract{
     @Autowired
     private SeriesService seriesService;
+    @Autowired
+    private GeneroService generoService;
 
 
     @Override
-    @GetMapping
+    @GetMapping("series/genero")
     public List<SerieResponse> getSeries(Genero genero) {
      return   seriesService.acharSeriesGenero();
 
     }
 
     @Override
-    @GetMapping
+    @GetMapping("/{id}")
     public ConsultarDetalhesSerieResponse getSerieById(Long id) {
         return seriesService.detalhesSerie(id);
     }
@@ -40,20 +43,21 @@ public class SeriesController implements SeriesContract{
     }
 
     @Override
-    @GetMapping
+
     public List<SerieResponse> getSeries() {
         return null;
     }
 
 
     @Override
+
     @GetMapping
     public List<SerieResponse> getSeries(Long id) {
         return seriesService.acharSeriesId(id);
     }
 
     @Override
-    @PostMapping
+    @PostMapping("/{id}/assistir")
     public void assistirSerie(Long id, Integer temporada, Integer episodio) {
              seriesService.AssistirSerie();
     }

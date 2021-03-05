@@ -59,4 +59,9 @@ public class SeriesService {
     public void AssistirSerie() {
 
     }
+
+    public List<SerieResponse> getSerie() {
+        // ajustar deposi
+        return null;
+    }
 }

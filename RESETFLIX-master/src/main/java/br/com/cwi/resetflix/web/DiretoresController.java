@@ -21,7 +21,7 @@ import br.com.cwi.resetflix.response.ConsultarDetalhesAtorResponse;
 import br.com.cwi.resetflix.service.AtoresService;
 
 @RestController
-@RequestMapping("/Diretores")
+@RequestMapping("/diretores")
 public class DiretoresController implements DiretoresContract {
 
     @Autowired
@@ -41,6 +41,7 @@ public class DiretoresController implements DiretoresContract {
     }
 
     @Override
+    @PostMapping
     public Long criarDiretor(@RequestBody final CriarDiretorRequest request) {
         return diretoresService.criarDiretor(request);
     }
